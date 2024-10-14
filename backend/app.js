@@ -13,7 +13,7 @@ const cors = require("cors");
 // );
 app.use(
   cors({
-    origin: ["https://multi-vendor-ecom-frontend.vercel.app/"],
+    origin: "https://multi-vendor-ecom-frontend.vercel.app/",
     credentials: true,
   })
 );
