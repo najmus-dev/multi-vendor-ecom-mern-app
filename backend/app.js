@@ -11,21 +11,12 @@ const cors = require("cors");
 //     credentials: true,
 //   })
 // );
-// app.use(
-//   cors({
-//     origin: "https://multi-vendor-ecom-frontend.vercel.app",
-//     credentials: true,
-//   })
-// );
 app.use(
   cors({
     origin: "https://multi-vendor-ecom-frontend.vercel.app",
     credentials: true,
-    methods: "GET,POST,PUT,DELETE",  // Allow specific HTTP methods
-    allowedHeaders: "Content-Type,Authorization",  // Allow necessary headers
   })
 );
-
 
 
 // app.use(express.json());
