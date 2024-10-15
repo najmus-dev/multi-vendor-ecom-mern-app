@@ -10,7 +10,7 @@ const sendShopToken = (user, statusCode, res) => {
     // secure: false,
     httpOnly: true,
     sameSite: "none",
-    secure: false,
+    secure: true,
   };
 
   res.status(statusCode).cookie("seller_token", token, options).json({
