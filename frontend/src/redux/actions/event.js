@@ -37,26 +37,6 @@ export const getAllEventsShop = (id) => async (dispatch) => {
   }
 };
 
-// delete event of a shop
-// export const deleteEvent = (id) => async (dispatch) => {
-//   try {
-//     dispatch({ type: "deleteeventRequest" });
-
-//     const { data } = await axios.delete(`${server}/event/delete-shop-event/${id}`, {
-//       withCredentials: true,
-//     });
-
-//     dispatch({
-//       type: "deleteeventSuccess",
-//       payload: data.message,
-//     });
-//   } catch (error) {
-//     dispatch({
-//       type: "deleteeventFailed",
-//       payload: error.response ? error.response.data.message : error.message,
-//     });
-//   }
-// };
 export const deleteEvent = (id) => async (dispatch) => {
   try {
     console.log("Dispatching deleteeventRequest for ID:", id); // Log ID before the request

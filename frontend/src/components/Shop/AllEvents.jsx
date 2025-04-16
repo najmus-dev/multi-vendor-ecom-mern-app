@@ -19,19 +19,6 @@ const AllEvents = () => {
     dispatch(getAllEventsShop(seller._id));
   }, [dispatch]);
 
-  // const handleDelete = (id) => {
-  //   console.log("Deleting event with id:", id);
-  //   dispatch(deleteEvent(id));
-  //   window.location.reload();
-  // }
-  // const handleDelete = async (id) => {
-  //   axios
-  //     .delete(`${server}/event/delete-shop-event/${id}`, { withCredentials: true })
-  //     .then((res) => {
-  //       toast.success("Event deleted succesfully!");
-  //     });
-  //   window.location.reload();
-  // };
   const handleDelete = async (id) => {
     try {
       const res = await axios.delete(`${server}/event/delete-shop-event/${id}`, {

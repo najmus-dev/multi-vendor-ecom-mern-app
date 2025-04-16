@@ -1,38 +1,9 @@
-// import React, { useEffect } from 'react'
-// import { useSelector } from 'react-redux';
-// import styles from '../../styles/styles'
-// import EventCard from "./EventCard.jsx";
-
-// const Events = () => {
-// //   const {allEvents,isLoading} = useSelector((state) => state.events);  
-   
-//   return (
-//     <div>
-//      {/* {
-//       !isLoading && ( */}
-//         <div className={`${styles.section}`}>
-//       <div className={`${styles.heading}`}>
-//         <h1>Popular Events</h1>
-//       </div>
-
-//       <div className="w-full grid">
-         
-//             <EventCard />
-    
-//   </div>
-//   </div>
-//   </div>
-//   )
-// }
-
-// export default Events
-
 
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import styles from '../../styles/styles';
 import EventCard from './EventCard';
-import { getAllEvents } from '../../redux/actions/event'; // Ensure the action is imported correctly
+import { getAllEvents } from '../../redux/actions/event'; 
 
 const Events = () => {
   const dispatch = useDispatch(); // Use dispatch to fetch events

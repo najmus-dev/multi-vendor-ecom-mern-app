@@ -62,23 +62,7 @@ const AllWithdraw = () => {
       minWidth: 130,
       flex: 0.6,
     },
-    // {
-    //   field: " ",
-    //   headerName: "Update Status",
-    //   type: "number",
-    //   minWidth: 130,
-    //   flex: 0.6,
-    //   renderCell: (params) => {
-
-    //     return (
-    //       <BsPencil
-    //         size={20}
-    //         className={`${params.row.status !== "Processing" ? 'hidden' : '' } mr-5 cursor-pointer`}
-    //         onClick={() => setOpen(true) || setWithdrawData(params.row)}
-    //       />
-    //     );
-    //   },
-    // },
+ 
     {
       field: " ",
       headerName: "Update Status",

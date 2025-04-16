@@ -27,11 +27,7 @@ const AllRefundOrders = () => {
       headerName: "Status",
       minWidth: 130,
       flex: 0.7,
-    //   cellClassName: (params) => {
-    //     return params.getValue(params.id, "status") === "Delivered"
-    //       ? "greenColor"
-    //       : "redColor";
-    //   },
+    
     cellClassName: (params) => {
         return params.status === "Delivered"
           ? "greenColor"

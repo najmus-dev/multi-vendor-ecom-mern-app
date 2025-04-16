@@ -9,12 +9,12 @@ import styles from "../../styles/styles";
 import { TfiGallery } from "react-icons/tfi";
 import socketIO from "socket.io-client";
 import { format } from "timeago.js";
-const ENDPOINT = "https://socket-for-multivendor-ecom.onrender.com/";
-// const ENDPOINT = "http://localhost:4000"; 
+// const ENDPOINT = "https://socket-for-multivendor-ecom.onrender.com/";
+const ENDPOINT = "http://localhost:4000";
 const socketId = socketIO(ENDPOINT, { transports: ["websocket"] });
 
 const DashboardMessages = () => {
-  const { seller,isLoading } = useSelector((state) => state.seller);
+  const { seller, isLoading } = useSelector((state) => state.seller);
   const [conversations, setConversations] = useState([]);
   const [arrivalMessage, setArrivalMessage] = useState(null);
   const [currentChat, setCurrentChat] = useState();
@@ -261,7 +261,7 @@ const MessageList = ({
   setUserData,
   online,
   setActiveStatus,
-  isLoading
+  isLoading,
 }) => {
   console.log(data);
   const [user, setUser] = useState([]);
@@ -313,10 +313,11 @@ const MessageList = ({
       </div>
       <div className="pl-3">
         <h1 className="text-[18px]">{user?.name}</h1>
+
         <p className="text-[16px] text-[#000c]">
           {!isLoading && data?.lastMessageId !== user?._id
             ? "You:"
-            : user?.name.split(" ")[0] + ": "}{" "}
+            : `${user?.name?.split?.(" ")[0] || "Unknown"}:`}{" "}
           {data?.lastMessage}
         </p>
       </div>
