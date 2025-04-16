@@ -12,23 +12,23 @@ const Hero = () => {
       }}
     >
       <div className={`${styles.section} w-[90%] 800px:w-[60%]`}>
-        <h1
-          className={`text-[35px] leading-[1.2] 800px:text-[60px] text-[#3d3a3a] font-[600] capitalize`}
-        >
-          Best Collection for <br /> home Decoration
+        <h1 className="text-[35px] leading-[1.2] 800px:text-[60px] text-[#3d3a3a] font-[600] capitalize">
+          Your One-Stop Marketplace for Everything You Need
         </h1>
         <p className="pt-5 text-[16px] font-[Poppins] font-[400] text-[#000000ba]">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae,
-          assumenda? Quisquam itaque <br /> exercitationem labore vel, dolore
-          quidem asperiores, laudantium temporibus soluta optio consequatur{" "}
-          <br /> aliquam deserunt officia. Dolorum saepe nulla provident.
+          Explore a diverse range of products from trusted vendors — all in one
+          place. <br />
+          From fashion to electronics, home essentials to handcrafted goods,{" "}
+          <br />
+          shop smart, shop local, and support growing businesses.
         </p>
+
         <Link to="/products" className="inline-block">
-            <div className={`${styles.button} mt-5`}>
-                 <span className="text-[#fff] font-[Poppins] text-[18px]">
-                    Shop Now
-                 </span>
-            </div>
+          <div className={`${styles.button} mt-5`}>
+            <span className="text-[#fff] font-[Poppins] text-[18px]">
+              Shop Now
+            </span>
+          </div>
         </Link>
       </div>
     </div>
